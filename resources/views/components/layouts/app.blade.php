@@ -9,7 +9,7 @@
     <title>DESTANA SINDANGLAYA</title>
     @livewireStyles
     @vite(['resources/js/app.js'])
-    <link rel="shortcut icon" href="{{ asset('assets/img/favicon.svg') }}" />
+    <link rel="shortcut icon" href="{{ asset('assets/img/logo/destana.png') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}">
