@@ -5,6 +5,7 @@
 	position: relative;
 	z-index: 99;
 	margin-bottom: 30px;
+	margin-top: -6px;
 
 	@include breakpoint (max-md){
 		margin-bottom: 0;
@@ -12,139 +13,127 @@
 
 	h6 {
 		font-size: 16px;
-		font-weight: 800;
-		text-transform: uppercase;
+		font-weight: 700;
+		letter-spacing: -0.32px;
 		line-height: 1;
-		color: #FEBC5F;
+		color: $gt-white;
 		font-family: $gt-heading-font;
 		position: relative;
-		font-family: $gt-body-font;
-		margin-bottom: 10px;
+		// padding-left: 30px;
+		// padding-right: 30px;
+		display: inline-block;
+		margin-bottom: 25px;
+		display: inline-block;
+		position: relative;
 
-	}
-
-	.title-text {
-		font-weight: 500;
+		&::after {
+			position: absolute;
+			content: "";
+			background: linear-gradient(90deg, #FF0808 0%, #00130B 100%);
+			width: 116px;
+			height: 1px;
+			left: 0;
+ 			bottom: -8px;
+		}
 	}
 
 	h2 {
-		//text-transform: capitalize;
-		
+		color: $gt-white;
+
 		span {
-			background: linear-gradient(90deg, #6B41FF 32.8%, #EA4BFF 57.18%, #FEBC5F 82.28%);
-			background-clip: text;
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			font-family: $gt-heading-font;
-			font-style: italic;
-			font-weight: 400;
-			padding-right: 8px;
-		}
-	}
-
-	&.style-2 {
-		h6 {
-			color: #173401;
-			font-family: $gt-heading-font-2;
+			font-size: 60px;
 			font-weight: 700;
-			text-transform: uppercase;
-		}
+			line-height: 112%;
+			color: $gt-theme-color;
 
-		h2 {
-			color: $gt-header-color-2;
-			font-size: 50px;
-			font-weight: 700;
-			font-family: $gt-heading-font-2;
-			line-height: 110%;
-
+			@include breakpoint(max-xxl){
+				font-size: 50px;
+			}
+		
+			@include breakpoint(max-xl){
+				font-size: 45px;
+			}
+		
+			@include breakpoint(max-lg){
+				font-size: 40px;
+			}
+		
 			@include breakpoint(max-md){
-				font-size: 43px;
+				font-size: 35px;
 			}
-
-			@include breakpoint(max-xxs){
-				font-size: 32px;
-			}
-		}
-	}
-
-	&.style-3 {
-		h6 {
-			color: $gt-theme-color-3;
-			font-family: $gt-heading-font-3;
-			font-weight: 600;
-			text-transform: uppercase;
-			font-size: 16px;
-		}
-
-		h2 {
-			color: $gt-header-color-2;
-			font-size: 50px;
-			font-weight: 800;
-			font-family: $gt-heading-font-3;
-			line-height: 120%;
-
-			@include breakpoint(max-md){
-				font-size: 43px;
-			}
-
-			@include breakpoint(max-xxs){
-				font-size: 32px;
-			}
-		}
-	}
-
-	&.style-4 {
-		h6 {
-			color: #E77096;
-			font-family: $gt-body-font;
-			font-weight: 600;
-			text-transform: uppercase;
-			font-size: 16px;
-		}
-
-		h2 {
-			color: $gt-header-color-2;
-			font-size: 50px;
-			font-weight: 800;
-			font-family: $gt-heading-font-3;
-			line-height: 120%;
-
-			@include breakpoint(max-md){
-				font-size: 43px;
-			}
-
-			@include breakpoint(max-xxs){
-				font-size: 32px;
-			}
-		}
-	}
-
-	&.style-5 {
-		h6 {
-			color: $gt-theme-color-5;
-			font-family: $gt-body-font;
-			font-weight: 600;
-			text-transform: uppercase;
-			font-size: 16px;
-		}
-
-		h2 {
-			color: $gt-header-color-3;
-			font-size: 50px;
-			font-weight: 800;
-			font-family: $gt-heading-font-5;
-			line-height: 120%;
-
-			@include breakpoint(max-md){
-				font-size: 43px;
-			}
-
-			@include breakpoint(max-xxs){
-				font-size: 32px;
+		
+			@include breakpoint(max-sm){
+				font-size: 30px;
 			}
 		}
 	}
 }
+
+
+.gt-section-title-2 {
+	position: relative;
+	z-index: 99;
+	margin-bottom: 30px;
+	margin-top: -6px;
+
+	@include breakpoint (max-md){
+		margin-bottom: 0;
+	}
+
+	h6 {
+		font-size: 16px;
+		font-weight: 700;
+		letter-spacing: -0.32px;
+		line-height: 1;
+		color: $gt-white;
+		font-family: $gt-heading-font;
+		position: relative;
+		display: inline-block;
+		margin-bottom: 25px;
+		display: inline-block;
+		position: relative;
+		padding-left: 60px;
+		padding-right: 60px;
+
+		@include breakpoint (max-sm) {
+			padding-left: 0;
+			padding-right: 0;
+		}
+		
+
+		&::before {
+			position: absolute;
+			content: "";
+			background: linear-gradient(90deg, #00130B 0%, #FF0808 100%);
+			width: 44px;
+			height: 1px;
+			left: 0;
+			top: 8px;
+			animation: borderAnim 2s infinite alternate ease-in-out;
+
+			@include breakpoint (max-sm) {
+				display: none;
+			}
+		}
+
+		&::after {
+			position: absolute;
+			content: "";
+			background: linear-gradient(90deg, #FF0808 0%, #00130B 100%);
+			width: 44px;
+			height: 1px;
+			right: 0;
+			top: 8px;
+			left: initial;
+			animation: borderAnim 2s infinite alternate ease-in-out;
+
+			@include breakpoint (max-sm) {
+				display: none;
+			}
+		}
+	}
+}
+
 
 .gt-section-title-area	{
 	@include flex;
@@ -153,6 +142,13 @@
 	z-index: 9;
 	margin-bottom: 30px;
 
+	.gt-section-title-2 {
+		margin-bottom: 0;
+	}
+	
+	.gt-section-title {
+		margin-bottom: 0;
+	}
 	
 	@include breakpoint (max-lg) {
 		flex-wrap: wrap;
@@ -161,58 +157,41 @@
 		gap: 30px;
 	}
 
-	.gt-theme-btn {
-		&.style-3 {
-			height: 49px;
-			line-height: 49px;
-			padding: 0 25px;
-		}
-	}
-
 	@include breakpoint (max-md){
 		margin-bottom: 0;
 	}
 
-	.gt-section-title {
-		margin-bottom: 0;
-	}
+	.rating {
+		span {
+			font-size: 14px;
+			font-weight: 400;
+			color: rgba(136, 136, 136, 1);
+		}
 
-	&.border-bottom-add {
-		border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-		padding-bottom: 35px;
-
-		@include breakpoint (max-xl){
-			flex-wrap: wrap;
-			gap: 20px;
+		.star {
+			margin-top: 5px;
+			color: rgba(255, 8, 8, 1);
 		}
 	}
 
-	.gt-section-info {
-		.client-image {
-			@include flex;
-			gap: 0;
+	.nav {
+		@include flex;
+		gap: 40px;
+		
+		.nav-item {
+			.nav-link {
+				font-size: 18px;
+				font-weight: 700;
+				color: #ABABAB;
+				padding: 0;
 
-			img {
-				margin-right: -20px;
-				border: 3px solid #05111A;
-				border-radius: 50%;
-			}
-
-			.icon {
-				width: 48px;
-				height: 48px;
-				line-height: 45px;
-				background-color: $gt-white;
-				border-radius: 50%;
-				text-align: center;
-				color: $gt-header-color-3;
-				border: 3px solid #05111A;
+				&.active {
+					color: $gt-theme-color;
+				}
 			}
 		}
 	}
 }
-
-
 //>>>>> Section Title End <<<<<//
 
 //>>>>> Basic Css Start <<<<<//
@@ -223,19 +202,11 @@
 }
 
 .section-bg {
+	background-color: $gt-bg-color-2;
+}
+
+.section-bg-1 {
 	background-color: $gt-bg-color;
-}
-
-.section-bg-2 {
-	background-color: $gt-header-color;
-}
-
-.section-bg-3 {
-	background-color: $gt-bg-color-3;
-}
-
-.section-bg-4 {
-	background: #EDF1FF;
 }
 
 .section-padding {

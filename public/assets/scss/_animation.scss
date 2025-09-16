@@ -439,31 +439,34 @@
 	}
 }
 
-
-// This is for Progress bar animation also has a js code
-@keyframes animate-positive {
-    0% {
-        width: 0;
-    }
-}
-
-@keyframes scale {
-	0% {
-	  top: -1000px;
-	  -webkit-transform: scale(1);
-	  transform: scale(1);
-	  opacity: 0;
-	}
-  
-	100% {
+@keyframes slideInLeft {
+	to {
 	  opacity: 1;
-	  -webkit-transform: scale(1);
-	  transform: scale(1);
+	  transform: translateX(0);
 	}
-}
+  }
 
-.animation-infinite {
-	animation: ShapeAnim 50s linear infinite;
+  @keyframes slideInRight {
+	to {
+	  opacity: 1;
+	  transform: translateX(0);
+	}
+  }
+  @keyframes shine {
+	0% {
+	  left: -100%;
+	}
+	50% {
+	  left: 100%;
+	}
+	100% {
+	  left: 100%;
+	}
+  }
+
+ 
+  .animation-infinite {
+	animation: ShapeAnim 80s linear infinite;
 	height: 30px;
 	width: 100%;
 	background-repeat: repeat;
@@ -475,39 +478,115 @@
 	  background-position: top left;
 	}
 	100% {
-	  background-position: top left 3000px;
+	  background-position: top left 2000px;
 	}
   }
 
 
 
+  @keyframes strokeColorChange {
+	0% {
+	  -webkit-text-stroke-color: white;
+	}
+	25% {
+	  -webkit-text-stroke-color: #00ffff;
+	}
+	50% {
+	  -webkit-text-stroke-color: #ff00ff;
+	}
+	75% {
+	  -webkit-text-stroke-color: #ffff00;
+	}
+	100% {
+	  -webkit-text-stroke-color: white;
+	}
+  }
+  
 
-  .splt-txt .whitespace {
-    width: 8px;
+  @keyframes strokeColorChange1 {
+	0% {
+	  -webkit-text-stroke-color: rgba(255, 255, 255, 0.30);
+	}
+	25% {
+	  -webkit-text-stroke-color: rgba(0, 255, 255, 0.30);
+	}
+	50% {
+	  -webkit-text-stroke-color: rgba(255, 0, 255, 0.30);
+	}
+	75% {
+	  -webkit-text-stroke-color: rgba(255, 255, 0, 0.30);
+	}
+	100% {
+		-webkit-text-stroke-color: rgba(255, 255, 255, 0.30);
+	}
+  }
+
+  @keyframes strokeColorChange2 {
+	100% {
+		-webkit-text-stroke-color: rgba(255, 255, 255, 0.30);
+	  }
+	  75% {
+		-webkit-text-stroke-color: rgba(0, 255, 255, 0.30);
+	  }
+	  50% {
+		-webkit-text-stroke-color: rgba(255, 0, 255, 0.30);
+	  }
+	  25% {
+		-webkit-text-stroke-color: rgba(255, 255, 255, 0.30);
+	  }
+	0% {
+	  -webkit-text-stroke-color: rgba(255, 255, 0, 0.30);
+	}
+  }
+
+  .img-custom-anim-bottom {
+	animation: img-anim-bottom 1.3s forwards cubic-bezier(0.645, 0.045, 0.355, 1);
+	opacity: 0;
 }
 
-.splt-txt.animated .char {
-    -webkit-animation: fadeIn 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;
-    animation: fadeIn 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;
-    -webkit-animation-delay: calc(30ms * var(--char-index));
-    animation-delay: calc(30ms * var(--char-index));
-}
-
-.splt-txt-bounce .whitespace {
-    width: 20px;
-}
-
-@media (max-width: 991px) {
-    .splt-txt-bounce .whitespace {
-        width: 10px;
+@keyframes img-anim-bottom {
+    0% {
+      transform: translateY(5%);
+      clip-path: inset(100% 0 0 0);
+      opacity: 0;
     }
+    100% {
+      transform: translateY(0);
+      clip-path: inset(0 0 0 0);
+      opacity: 1;
+    }
+  }
+
+
+  @keyframes sparkle {
+	0% { opacity: 0; transform: scale(0.5); }
+	50% { opacity: 1; transform: scale(1.5); }
+	100% { opacity: 0; transform: scale(0.5); }
+  }
+
+
+  @keyframes borderAnim {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 44px; 
+	}
 }
 
-.splt-txt-bounce.animated .char {
-    -webkit-animation: bounceIn 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;
-    animation: bounceIn 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;
-    -webkit-animation-delay: calc(30ms * var(--char-index));
-    animation-delay: calc(30ms * var(--char-index));
-}
 
+
+
+
+
+
+@keyframes typing {
+	from { width: 0 }
+	to { width: 17ch } /* Number of characters */
+  }
+
+  @keyframes blink {
+	0%, 100% { border-color: transparent }
+	50% { border-color: red }
+  }
 

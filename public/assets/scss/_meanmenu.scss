@@ -11,6 +11,7 @@
 	padding: 0;
 	min-height: auto;
 	background: none;
+	background: none;
   }
   
   .mean-container .mean-nav > ul {
@@ -28,14 +29,14 @@
   .mean-container .mean-nav ul li a {
 	width: 100%;
 	padding: 10px 0;
-	color: $gt-header-color !important;
-	font-size: 16px;
-	line-height: 1.5;
-	font-weight: 600;
+	color: $gt-black;
+	font-size: 17px;
+	line-height: 2;
+	font-weight: 700;
 	text-transform: uppercase;
-	border-bottom: 1px solid #79717133 !important;
+	border-bottom: 1px solid $gt-text-color !important;
 	border: none;
-    font-family: $gt-body-font;
+    font-family: $gt-heading-font;
 
 	&:hover {
 		color: $gt-theme-color;
@@ -81,12 +82,4 @@
 	padding: 0;
 	border-top: 0;
 	margin-bottom: 20px;
-}
-
-.mobile-menu {
-	&.style-2 {
-		.mean-nav ul li a {
-			color: $gt-header-color-2 !important;
-		}
-	}
-}
+  }

@@ -1,86 +1,108 @@
 /*
-Theme Name: Boostly 
+Theme Name: Xports 
 Author: Gramentheme
 Author URI: https://themeforest.net/user/Gramentheme/portfolio
-Description: Boostly - SaaS & Tech Startup HTML Template
+Description: Xports - Gaming and eSports Theme HTML Template
 Service Html Template 
 Version: 1.0.0
 */
 
-//====================================================================//
-//                            CSS TABLE OF CONTENTS                   //
-//====================================================================//
+/*CSS Table Of Content Ends Here*/
+
+/*
+--------------------------------------------------------------
+[Table of Contents]
+--------------------------------------------------------------
+01. Variables & Mixins
+02. Typography
+03. Buttons
+04. About 
+05. Animation 
+06. Brand 
+07. Contact
+08. Cta
+09. Faq
+10. Feature
+11. Footer
+12. Game
+13. Header
+14. Helping
+15. Hero
+16. Marquee
+17. Match
+18. Meanmenu
+19. News
+20. Preloader
+21. Pricing
+22. Section
+23. Service
+24. Shop
+25. Team
+26. Testimonial
+--------------------------------------------------------------
+*/
 
 //>> Basic Start <<//
-// 1. Mixins
-// 2. Variables
-// 3. Buttons
-// 4. Typography
-// 5. Fonts
+
+//>> Mixins <<//
+@import "_mixins";
+//>> Variables <<//	
+@import "_variables";
+//>> Buttons <<//
+@import "_buttons";
+//>> Typography <<//
+@import "_typography";
+//>> Basic End <<//	
+
 
 //>> Template Section Style Start <<//
-// 6. About
-// 7. Animation
-// 8. Contact
-// 9. CTA (Call To Action)
-// 10. Pricing
-// 11. FAQ
-// 12. Feature
-// 13. Footer
-// 14. Header
-// 15. Helping
-// 16. Hero
-// 17. MeanMenu
-// 18. News / Blog
-// 19. Preloader
-// 20. Section (Common Section Styling)
-// 21. Service
-// 22. Team
-// 23. Testimonial
 
-
-//>> Basic Start <<//
-
-/* -------------------------------------------------------------------------- */
-/*                               TABLE OF CONTENTS                            */
-/* -------------------------------------------------------------------------- */
-
-/* >> Utilities << */
-@import "_mixins";
-@import "_variables";
-@import "_buttons";
-@import "_typography";
-@import "_fonts";
-
-/* >> Base << */
-@import "_section"; 
-@import "_preloader";
-
-/* >> Layout << */
-@import "_header";
-@import "_footer";
-@import "_meanmenu";
-
-/* >> Sections << */
-@import "_hero";
+//>> About <<//
 @import "_about";
-@import "_feature";
-@import "_service";
-@import "_helping";
-@import "_team";
-@import "_testimonial";
-@import "_pricing";
-@import "_faq";
-@import "_news";
-@import "_contact";
-@import "_cta";
-
-/* >> Components << */
+//>> Animation <<//
 @import "_animation";
-
-/* -------------------------------------------------------------------------- */
-/*                               END TABLE OF CONTENTS                        */
-/* -------------------------------------------------------------------------- */
+//>> Brand <<//
+@import "_brand";
+//>> Contact <<//
+@import "_contact";
+//>> Cta <<//
+@import "_cta";
+//>> Faq <<//
+@import "_faq";
+//>> Feature <<//
+@import "_feature";
+//>> Footer <<//
+@import "_footer";
+//>> Game <<//
+@import "_game";
+//>> Header <<//
+@import "_header";
+//>> Helping <<//
+@import "_helping";
+//>> Hero <<//
+@import "_hero";
+//>> Marquee <<//
+@import "_marquee";
+//>> _Match <<//
+@import "_match";
+//>> MeanMenu <<//
+@import "_meanmenu";
+//>> News <<//
+@import "_news";
+//>> Preloader <<//
+@import "_preloader";
+//>> _Pricing <<//
+@import "_pricing";
+//>> Section <<//
+@import "_section";
+//>> Service <<//
+@import "_service";
+//>> Shop <<//
+@import "_shop";
+//>> Team <<//
+@import "_team";
+//>> Testimonial <<//
+@import "_testimonial";
 
 
 
